@@ -25,7 +25,8 @@ Pro-tip. Use the Page Ruler extension to measure the size of elements
 
 body {
 	margin: auto;
-	max-width: 960px;
+	min-width: 960px;
+    max-width: 960px;
 	background-color: #ffffff;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
@@ -58,6 +59,10 @@ h3 {
 	font-size: 1.2em;
 	color: #4aaaa5; /*Teal color*/
 }
+h4 {
+    font-size: 11px;
+}
+
 p {
 	color: #777777;
 }
@@ -104,6 +109,10 @@ button {
 	font-size: 18px;
 	width: 30%;
 	border: none;
+}
+button:hover {
+    color: lightgrey;
+    transition: all .5s;
 }
 
 /*text over image*/
@@ -157,21 +166,23 @@ button {
 ******************************/
 .main-content{
 	display: block;
-	min-height: 480px;
+	min-height: 500px;
 	background-image: url('../images/cork-wallet.png'); 
 
   }
   .main-content-port{
 	display: block;
-	min-height: 691px;
+	min-height: 661px;
 	background-image: url('../images/cork-wallet.png'); 
 	border-bottom: 2px solid lightgrey;
+	position: relative;
   }
+
   .main-content-contact{
 	display: block;
 	min-height: 600px;
 	background-image: url('../images/cork-wallet.png'); 
-
+    position: relative;
   }
  .my-text {
  	float: left;
@@ -185,23 +196,25 @@ button {
 }
 .my-text-contact {
  	float: left;
-    margin: 15px 0px 0px 70px;
+    margin: 15px 0px 30px 70px;
     padding: 2px 38px 19px 19px;
     max-width: 410px;
     background: #fff;
     border: 3px solid #dddddd;
     border-radius: 4px;
+
 }
 .my-text-port {
- 	float: left;
-    margin: 15px 0px 0px 70px;
+    margin: 0px 0px 0px 70px;
     padding: 3px 24px 20px;
     max-width: 410px;
-    height: 649px;
+    height: 617px;
     background: #fff;
     border: 3px solid #dddddd;
     border-radius: 4px;
     border-bottom: none;
+    position: relative;
+    top: 20px;
 }
 .profile{
 	float: left;
@@ -219,27 +232,62 @@ button {
 }
 .connect {
 	margin: 17px 0 0 -25px;
-    padding: 8px 19px 33px;
+    padding: 8px 20px 33px;
 	max-width: 250px;
 	text-align: center;
 	background: #fff;
 	border: 1px solid lightgrey;
 	border-radius: 4px;
 	display: inline-block;
+	position: absolute;
+    top: 5px;
+    left: 592px;
 }
+.connect-port {
+    margin: 17px 0 0 -25px;
+    padding: 8px 20px 33px;
+    max-width: 250px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 589px;
+}
+.connect-about {
+    margin: 18px 0 0 58px;
+    padding: 7px 20px 21px;
+    max-width: 250px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    display: inline-block;
+    position: absolute;
+    top: 87px;
+    left: 639px
+}
+
+
+
+
 .connect a {
 	border-right: none;
 	padding-right: 0;
 }
+.connect-about a {
+    border-right: none;
+    padding-right: 0;
+}
+.connect-port a {
+    border-right: none;
+    padding-right: 0;
+}
 
-.primary {
-    width: 44%;
-    margin: 10px 10px;
-}
-.secondary{
-	width:44%;
-    margin: 5px 10px;
-}
+
+
 
 .logo {
 	max-width: 20.5%;
@@ -260,9 +308,106 @@ button {
     text-align: center;
 }
 /*Pictures*/
-#1{
-	position: relative;
+.banner {
+	/*float: left;*/
+    max-width: 44%;
+    position: relative;
 }
+#image {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+#text {
+  	z-index: 100;
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    left: 0px;
+    top: 132px;
+    background-color: teal;
+    padding: 16px 40px;
+    width: 57%;
+    text-align: center;
+}
+#image2 {
+    position: absolute;
+    left: 221px;
+    top: 0;
+    width: 100%;
+}
+#text2 {
+  	z-index: 100;
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    left: 220px;
+    top: 132px;
+    background-color: teal;
+    padding: 16px 40px;
+    width: 57%;
+    text-align: center;
+}
+#image3 {
+    position: absolute;
+    left: 0px;
+    top: 188px;
+    width: 100%;
+}
+#text3 {
+  	z-index: 100;
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    left: 0px;
+    top: 316px;
+    background-color: teal;
+    padding: 16px 40px;
+    width: 57%;
+    text-align: center;
+}
+#image4 {
+    position: absolute;
+    left: 221px;
+    top: 185px;
+    width: 100%;
+}
+#text4 {
+  	z-index: 100;
+    position: absolute;
+    color: white;
+    font-size: 20px;
+	left: 221px;
+    top: 316px;
+    background-color: teal;
+    padding: 16px 40px;
+    width: 57%;
+    text-align: center;
+}
+#image5 {
+    position: absolute;
+    left: 0px;
+    top: 383px;
+    width: 100%;
+}
+#text5 {
+  	z-index: 100;
+    position: absolute;
+    color: white;
+    font-size: 20px;
+	left: 0px;
+    top: 503px;
+    background-color: teal;
+    padding: 16px 40px;
+    width: 57%;
+    text-align: center;
+}
+
+
+
+
+
 /******************************
 		FOOTER
 ******************************/
@@ -288,6 +433,8 @@ button {
 .contact {
 	margin-top: 395px;
 	border-top: 7px solid #4aaaa5; /*Teal color*/
+    clear: left;
+    border-top: 7px solid #4aaaa5;
 }
 
 
