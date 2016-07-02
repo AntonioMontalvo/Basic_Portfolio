@@ -256,22 +256,15 @@ button:hover {
     left: 589px;
 }
 .connect-about {
-    margin: 18px 0 0 58px;
+    float: left;
+    margin: 18px 0 0 30px;
     padding: 7px 20px 21px;
     max-width: 250px;
     text-align: center;
     background: #fff;
     border: 1px solid lightgrey;
     border-radius: 4px;
-    display: inline-block;
-    position: absolute;
-    top: 87px;
-    left: 565px
 }
-
-
-
-
 .connect a {
 	border-right: none;
 	padding-right: 0;
